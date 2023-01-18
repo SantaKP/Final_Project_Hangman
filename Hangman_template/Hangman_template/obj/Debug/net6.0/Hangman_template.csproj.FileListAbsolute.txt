@@ -1,0 +1,15 @@
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\obj\Debug\net6.0\Hangman_template.csproj.AssemblyReference.cache
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\obj\Debug\net6.0\Hangman_template.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\obj\Debug\net6.0\Hangman_template.AssemblyInfoInputs.cache
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\obj\Debug\net6.0\Hangman_template.AssemblyInfo.cs
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\obj\Debug\net6.0\Hangman_template.csproj.CoreCompileInputs.cache
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\bin\Debug\net6.0\Hangman_template.exe
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\bin\Debug\net6.0\Hangman_template.deps.json
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\bin\Debug\net6.0\Hangman_template.runtimeconfig.json
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\bin\Debug\net6.0\Hangman_template.dll
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\bin\Debug\net6.0\Hangman_template.pdb
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\obj\Debug\net6.0\Hangman_template.dll
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\obj\Debug\net6.0\refint\Hangman_template.dll
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\obj\Debug\net6.0\Hangman_template.pdb
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\obj\Debug\net6.0\Hangman_template.genruntimeconfig.cache
+C:\Users\splen\Desktop\izmēģinājums\izmēģinājums\Hangman_template\Hangman_template\obj\Debug\net6.0\ref\Hangman_template.dll
