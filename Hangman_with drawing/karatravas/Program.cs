@@ -71,10 +71,10 @@ namespace Hangman3
                         Console.WriteLine("|             |");
                         Console.WriteLine("|             |");
                         Console.WriteLine("|             |");
-
+                    }
 
                         if (mistakes == 2)
-                    {
+                        {
                             Console.WriteLine("|-------------|");
                             Console.WriteLine("|             |");
                             Console.WriteLine("|             |");
@@ -82,8 +82,8 @@ namespace Hangman3
                             Console.WriteLine("|             |");
                             Console.WriteLine("|             |");
                         }
-                    if (mistakes == 3)
-                    {
+                        if (mistakes == 3)
+                        {
                             Console.WriteLine("|------|-------|");
                             Console.WriteLine("|      |       |");
                             Console.WriteLine("|      o       |");
@@ -92,7 +92,8 @@ namespace Hangman3
                             Console.WriteLine("|              |");
                         }
 
-                    if (mistakes == 4) {
+                        if (mistakes == 4)
+                        {
                             Console.WriteLine("|------|-------|");
                             Console.WriteLine("|      |       |");
                             Console.WriteLine("|      o       |");
@@ -108,8 +109,9 @@ namespace Hangman3
                         Console.WriteLine("|     -|-      |");
                         Console.WriteLine("|              |");
                         Console.WriteLine("|              |");
-
-                        if (mistakes == 6) {
+                    }
+                            if (mistakes == 6)
+                            {
                                 Console.WriteLine("|------|-------|");
                                 Console.WriteLine("|      |       |");
                                 Console.WriteLine("|      o       |");
@@ -117,36 +119,36 @@ namespace Hangman3
                                 Console.WriteLine("|      ^       |");
                                 Console.WriteLine("|              |");
                             }
+                        
                     }
-                }
 
-                string strguess = string.Concat(guessarray);
-                Console.WriteLine(strguess);
-                if (strguess.Contains("-"))
-                {
-                    Console.WriteLine("There is still missing letters");
-                    if (mistakes == 3)
+                    string strguess = string.Concat(guessarray);
+                    Console.WriteLine(strguess);
+                    if (strguess.Contains("-"))
                     {
-                        Console.WriteLine("The animal " + animallist[rnd].hint);
+                        Console.WriteLine("There is still missing letters");
+                        if (mistakes == 3)
+                        {
+                            Console.WriteLine("The animal " + animallist[rnd].hint);
+                        }
                     }
-                }
-                else
+                    else
+                    {
+                        Console.WriteLine("CONGRATULATIONS, YOU WON");
+                        break;
+                    }
+
+
+                
+                if (mistakes == 6)
                 {
-                    Console.WriteLine("CONGRATULATIONS, YOU WON");
-                    break;
+                    Console.WriteLine("YOU LOST");
+                    Console.WriteLine("The secret word was: " + animalN);
                 }
 
 
+
+
             }
-            if (mistakes == 6)
-            {
-                Console.WriteLine("YOU LOST");
-                Console.WriteLine("The secret word was: " + animalN);
-            }
-
-
-
-
         }
-    }
-}
+}   }
