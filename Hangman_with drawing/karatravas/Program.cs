@@ -64,16 +64,6 @@ namespace Hangman3
                     mistakes = mistakes + 1;
                     Console.WriteLine(" Your made " + mistakes + " mistakes");
                     if (mistakes == 1)
-                    { 
-                        Console.WriteLine("|");
-                    Console.WriteLine("|");
-                    Console.WriteLine("|");
-                    Console.WriteLine("|");
-                    Console.WriteLine("|");
-                    Console.WriteLine("|");}
-
-
-                    if (mistakes == 2)
                     {
                         Console.WriteLine("|             |");
                         Console.WriteLine("|             |");
@@ -81,25 +71,35 @@ namespace Hangman3
                         Console.WriteLine("|             |");
                         Console.WriteLine("|             |");
                         Console.WriteLine("|             |");
-                    }
+
+
+                        if (mistakes == 2)
+                    {
+                            Console.WriteLine("|-------------|");
+                            Console.WriteLine("|             |");
+                            Console.WriteLine("|             |");
+                            Console.WriteLine("|             |");
+                            Console.WriteLine("|             |");
+                            Console.WriteLine("|             |");
+                        }
                     if (mistakes == 3)
                     {
-                        Console.WriteLine("|-------------|");
-                        Console.WriteLine("|             |");
-                        Console.WriteLine("|             |");
-                        Console.WriteLine("|             |");
-                        Console.WriteLine("|             |");
-                        Console.WriteLine("|             |");
-                    }
+                            Console.WriteLine("|------|-------|");
+                            Console.WriteLine("|      |       |");
+                            Console.WriteLine("|      o       |");
+                            Console.WriteLine("|              |");
+                            Console.WriteLine("|              |");
+                            Console.WriteLine("|              |");
+                        }
 
-                    if (mistakes == 4) { 
-                    Console.WriteLine("|------|-------|");
-                    Console.WriteLine("|      |       |");
-                    Console.WriteLine("|      o       |");
-                    Console.WriteLine("|              |");
-                    Console.WriteLine("|              |");
-                    Console.WriteLine("|              |");
-                     }
+                    if (mistakes == 4) {
+                            Console.WriteLine("|------|-------|");
+                            Console.WriteLine("|      |       |");
+                            Console.WriteLine("|      o       |");
+                            Console.WriteLine("|      |       |");
+                            Console.WriteLine("|              |");
+                            Console.WriteLine("|              |");
+                        }
                     if (mistakes == 5)
                     {
                         Console.WriteLine("|------|-------|");
@@ -109,14 +109,14 @@ namespace Hangman3
                         Console.WriteLine("|              |");
                         Console.WriteLine("|              |");
 
-                        if (mistakes == 6) { 
-                        Console.WriteLine("|------|-------|");
-                        Console.WriteLine("|      |       |");
-                        Console.WriteLine("|      o       |");
-                        Console.WriteLine("|     -|-      |");
-                        Console.WriteLine("|              |");
-                        Console.WriteLine("|              |");
-                        }
+                        if (mistakes == 6) {
+                                Console.WriteLine("|------|-------|");
+                                Console.WriteLine("|      |       |");
+                                Console.WriteLine("|      o       |");
+                                Console.WriteLine("|     -|-      |");
+                                Console.WriteLine("|      ^       |");
+                                Console.WriteLine("|              |");
+                            }
                     }
                 }
 

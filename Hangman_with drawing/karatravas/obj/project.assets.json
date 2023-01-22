@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\splen\\Desktop\\karatravas\\karatravas\\karatravas.csproj",
+      "projectUniqueName": "C:\\Users\\splen\\Documents\\Final_Project_Hangman\\Hangman_with drawing\\karatravas\\karatravas.csproj",
       "projectName": "karatravas",
-      "projectPath": "C:\\Users\\splen\\Desktop\\karatravas\\karatravas\\karatravas.csproj",
+      "projectPath": "C:\\Users\\splen\\Documents\\Final_Project_Hangman\\Hangman_with drawing\\karatravas\\karatravas.csproj",
       "packagesPath": "C:\\Users\\splen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\splen\\Desktop\\karatravas\\karatravas\\obj\\",
+      "outputPath": "C:\\Users\\splen\\Documents\\Final_Project_Hangman\\Hangman_with drawing\\karatravas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\splen\\AppData\\Roaming\\NuGet\\NuGet.Config",
