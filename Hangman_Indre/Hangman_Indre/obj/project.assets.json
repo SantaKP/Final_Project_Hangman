@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\splen\\Desktop\\Hangman_Indre\\Hangman_Indre\\Hangman_Indre.csproj",
+      "projectUniqueName": "C:\\Users\\splen\\Documents\\Final_Project_Hangman\\Hangman_Indre\\Hangman_Indre\\Hangman_Indre.csproj",
       "projectName": "Hangman_Indre",
-      "projectPath": "C:\\Users\\splen\\Desktop\\Hangman_Indre\\Hangman_Indre\\Hangman_Indre.csproj",
+      "projectPath": "C:\\Users\\splen\\Documents\\Final_Project_Hangman\\Hangman_Indre\\Hangman_Indre\\Hangman_Indre.csproj",
       "packagesPath": "C:\\Users\\splen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\splen\\Desktop\\Hangman_Indre\\Hangman_Indre\\obj\\",
+      "outputPath": "C:\\Users\\splen\\Documents\\Final_Project_Hangman\\Hangman_Indre\\Hangman_Indre\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\splen\\AppData\\Roaming\\NuGet\\NuGet.Config",

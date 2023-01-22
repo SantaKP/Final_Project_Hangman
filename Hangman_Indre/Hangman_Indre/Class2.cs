@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Hangman_Indre
 {
-    internal class Class2
+    class Class2
     {
+
+
+
+
     }
+
+
+
+
+
 }

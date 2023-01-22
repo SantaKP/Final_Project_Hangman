@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalsHangman
 {
-    internal class Program
+     class Program
     {
         static void Main(string[] args)
 
@@ -27,7 +27,7 @@ namespace AnimalsHangman
             foreach (var animals in animallist)
                 Console.WriteLine(animals);
 
-            int rnd= new Random().Next(0, 9);
+            int rnd = new Random().Next(0, 9);
             Console.WriteLine(rnd);
             Console.WriteLine(animallist[rnd]);
             Console.WriteLine(animallist[rnd].name);
@@ -35,13 +35,12 @@ namespace AnimalsHangman
             int letters = animalN.Length;
 
             Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" +
-                      "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" +
-                      "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-            Console.WriteLine("Word contains " + letters + " " + " letters");
+                                  "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" +
+                                  "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
+            Console.WriteLine(letters);
             for (int i = 0; i < letters; i++)
                 Console.Write("_ ");
-
             Console.WriteLine();
             List<char> letter = new List<char>();
             Console.WriteLine("Guess the letter:");
@@ -54,72 +53,64 @@ namespace AnimalsHangman
             //Console.WriteLine(animalN[2]);
 
 
-            int mistk = 0;
-            int letterf = 0;
-
-          
-            for (int i = 0; i < letters; i++)
+           
 
 
-                if (letter[0] == animalN[i])
+
+           static int AnswerValidation(string animalN, int letters, List <char> letter)
+            {
+
+                int mistk = 0;
+                int letterf = 0;
+
+                char lette = Console.ReadLine()[0];
+                letter.Add(lette);
+
+
+                for (int i = 0; i < letters; i++)
+                    if (letter[0] == animalN[i])
+                    {
+                        Console.Write(letter[0]);
+                        letterf = letterf++;
+                    }
+                    else
+                        Console.Write("_ ");
+                Console.WriteLine();
+                return letterf;
+            }
+
+                static int AnswerValidation2(string animalN, int letters, List<char> letter)
                 {
-                    Console.Write(letter[0]);
-                    letterf = letterf++;
+                    int mistk = 0;
+                    int letterf = 0;
+
+                    char lette = Console.ReadLine()[0];
+                    letter.Add(lette);
+
+
+
+                    for (int i = 0; i < letters; i++)
+                        if (letter[0] != animalN[i])
+                        {
+                            mistk = mistk + 1;
+                            Console.WriteLine("You made " + mistk + " mistakes");
+                            Console.WriteLine("Have another guess");
+                        }
+                        else Console.WriteLine("correct! Keep guessing!");
+
+                    return mistk;
                 }
-                else
-                    Console.Write("_ ");
-            Console.WriteLine();
-
-            mistk = mistk + 1;
-            Console.WriteLine("You made " + mistk + " mistakes");
-            Console.WriteLine("Have another guess");
-
-
-
-
-
-            char lette1 = Console.ReadLine()[0];
-            letter.Add(lette1);
-
-            for (int i = 0; i < letters; i++)
-
-
-                if (letter[0] == animalN[i])
-                {
-                    Console.Write(letter[0]);
-                    letterf = letterf++;
-                }
-                else
-                    Console.Write("_ ");
-            Console.WriteLine();
-
-            mistk = mistk + 1;
-            Console.WriteLine("You made " + mistk + " mistakes");
-            Console.WriteLine("Have another guess");
+            }
 
 
 
 
 
 
-            char lette2 = Console.ReadLine()[0];
-            letter.Add(lette2);
-
-            for (int i = 0; i < letters; i++)
 
 
-                if (letter[0] == animalN[i])
-                {
-                    Console.Write(letter[0]);
-                    letterf = letterf++;
-                }
-                else
-                    Console.Write("_ ");
-            Console.WriteLine();
 
-            mistk = mistk + 1;
-            Console.WriteLine("You made " + mistk + " mistakes");
-            Console.WriteLine("Have another guess");
+
 
 
 
@@ -131,4 +122,4 @@ namespace AnimalsHangman
 
 
     }
-    }
+    
