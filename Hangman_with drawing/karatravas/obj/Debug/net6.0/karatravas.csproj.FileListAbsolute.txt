@@ -1,0 +1,15 @@
+C:\Users\splen\Desktop\karatravas\karatravas\bin\Debug\net6.0\karatravas.exe
+C:\Users\splen\Desktop\karatravas\karatravas\bin\Debug\net6.0\karatravas.deps.json
+C:\Users\splen\Desktop\karatravas\karatravas\bin\Debug\net6.0\karatravas.runtimeconfig.json
+C:\Users\splen\Desktop\karatravas\karatravas\bin\Debug\net6.0\karatravas.dll
+C:\Users\splen\Desktop\karatravas\karatravas\bin\Debug\net6.0\karatravas.pdb
+C:\Users\splen\Desktop\karatravas\karatravas\obj\Debug\net6.0\karatravas.csproj.AssemblyReference.cache
+C:\Users\splen\Desktop\karatravas\karatravas\obj\Debug\net6.0\karatravas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\splen\Desktop\karatravas\karatravas\obj\Debug\net6.0\karatravas.AssemblyInfoInputs.cache
+C:\Users\splen\Desktop\karatravas\karatravas\obj\Debug\net6.0\karatravas.AssemblyInfo.cs
+C:\Users\splen\Desktop\karatravas\karatravas\obj\Debug\net6.0\karatravas.csproj.CoreCompileInputs.cache
+C:\Users\splen\Desktop\karatravas\karatravas\obj\Debug\net6.0\karatravas.dll
+C:\Users\splen\Desktop\karatravas\karatravas\obj\Debug\net6.0\refint\karatravas.dll
+C:\Users\splen\Desktop\karatravas\karatravas\obj\Debug\net6.0\karatravas.pdb
+C:\Users\splen\Desktop\karatravas\karatravas\obj\Debug\net6.0\karatravas.genruntimeconfig.cache
+C:\Users\splen\Desktop\karatravas\karatravas\obj\Debug\net6.0\ref\karatravas.dll
