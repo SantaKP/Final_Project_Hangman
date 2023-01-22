@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hangman_W_arrays
+namespace Hangman
 {
     internal class Input
     {

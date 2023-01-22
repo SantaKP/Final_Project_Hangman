@@ -23,5 +23,13 @@ namespace AnimalsHangman
         {
             return $"Name: {name,-8} Habitat: {habitat,-10} It has: {hint} ";
         }
+
+
+
+
+
+
+
+
     }
 }

@@ -12,8 +12,8 @@
 
 
         while (wordValidation == false || guesingWord.Length == 0)
-        
-        
+
+
         {
             Console.WriteLine("Please enter only letters! Try again:");
             guesingWord = Console.ReadLine();
@@ -23,14 +23,36 @@
 
         }
 
-          //Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" +
-          //                        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" +
-          //                        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-
-
+        Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" +
+                                "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" +
+                                "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        char input;
+        int lives = 10;
         int WordLenght = guesingWord.Length;
+        char[] arrayWord = guesingWord.ToCharArray();
+        char[] guessInput = new char[WordLenght];
+        Console.WriteLine("Word you must guess has " + WordLenght + " " + "letters.");
+
+        Console.WriteLine("Please guess first letter: ");
 
 
+        input = Convert.ToChar(Console.ReadLine());
+        
+        foreach (char guessinputf in guesingWord)
+        {
+            Console.Write("- ");
+
+
+        }
+         for (int i=0; i<WordLenght; i++)
+        {
+            if (guesingWord.Contains (input))
+            {
+
+            Console.WriteLine("Correct answer!");
+                Console.WriteLine(input);
+        }
+        }
 
 
 
@@ -39,7 +61,16 @@
 
 
 
-
-
-
 }
+
+
+
+
+    
+
+
+
+
+
+
+
