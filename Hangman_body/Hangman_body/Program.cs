@@ -13,7 +13,7 @@ namespace Drawing
 
             {
                 for (int i = 0; i < 11; i++)
-                    Console.WriteLine("|");
+                Console.WriteLine("|");
                 Console.WriteLine("|");
                 Console.WriteLine("|");
                 Console.WriteLine("|");
