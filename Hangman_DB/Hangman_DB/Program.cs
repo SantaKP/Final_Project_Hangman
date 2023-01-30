@@ -1,18 +1,32 @@
-﻿class HangmanDB
+﻿using Hangman_DB;
+using System.Reflection.Metadata;
+
+class HangmanDB
 {
 
 static void Main(string[] args)
     {
 
-        string myFile = File.ReadAllText(@"C:\Users\splen\Documents\Final_Project_Hangman\data_base.csv");
-
-
-        Console.WriteLine(myFile);
-
-
+       Console.WriteLine(User_Input.WhatToGuess());
 
 
     }
+
+
+}
+
+
+
+
+class DBAnalysis
+{
+
+    
+
+
+
+
+
 
 
 }

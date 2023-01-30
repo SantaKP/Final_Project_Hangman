@@ -6,22 +6,52 @@ class SecondTry
     public static void Main(string[] args)
     {
 
-        //Console.WriteLine("What would you like to guess- animals, vegetables or fruits? :");
-        //string theme = Console.ReadLine();
+        Console.WriteLine("What would you like to guess- animals, vegetables or fruits? :");
+        string theme = Console.ReadLine();
 
-        //string rawCSV = System.IO.File.ReadAllText(@"C:\Users\splen\Documents\Final_Project_Hangman\data_base_second_try.csv");
+      
+        bool animals2 = true;
+        bool vegetables = true;
+        bool fruits = true;
 
+        if (vegetables = true)
+        {
+            string[] vegLines = System.IO.File.ReadAllLines(@"C:\Users\splen\Documents\Final_Project_Hangman\vegetables.csv");
+            var vegNames = new List<string>();
+            int rndVeg = new Random().Next(0, 6);
+
+            for (int k = 0; k < vegLines.Length; k++)
+            {
+
+                string[] vegData = vegLines[k].Split(';');// spotting in rows
+                vegNames.Add(vegData[0]);
+
+                for (int l = 0; l < vegData.Length; l++)
+
+                {
+                    /* Console.WriteLine(rawData[j]);*///writes all csv file in line
+
+                }
+
+            }
+            //string vegN = vegNames[rndVeg];
+            //Console.WriteLine(vegNames[rndVeg]);
+
+            string vegN = vegNames[rndVeg];
+            int lettersNmb1 = vegN.Length;
+
+        }
         //Console.WriteLine(rawCSV);
-
+        if (animals2= true) 
+        { 
         string[] csvLines = System.IO.File.ReadAllLines(@"C:\Users\splen\Documents\Final_Project_Hangman\data_base_second_try.csv");
 
         var animalNames = new List<string>();
-         List <Animals> animals = new List<Animals>();
+        
         
         int rnd = new Random().Next(0, 11);
 
-        //Console.WriteLine(rnd);
-
+ 
         for (int i = 0; i < csvLines.Length; i++)
         {
            
@@ -35,31 +65,41 @@ class SecondTry
 
             }
 
-        }
+                
+         }
 
-
-        for (int i = 0; i < 1; i++)
-        {
-
-            //Console.WriteLine(animalNames[i]);
-            Random randi= new Random(); //doesnt do anything
-            int one = randi.Next(0, 11);
-            for (int j = 0; j< 1; j++) 
+          if (fruits = true)
             {
-                //Console.WriteLine(animalNames[rnd]);
+                string[] fruitLines = System.IO.File.ReadAllLines(@"C:\Users\splen\Documents\Final_Project_Hangman\fruits.csv");
+                var fruitNames = new List<string>();
+                int rndfruit = new Random().Next(0, 5);
+
+                for (int f = 0; f < fruitLines.Length; f++)
+                {
+
+                    string[] fruitData = fruitLines[f].Split(';');// spotting in rows
+                    fruitNames.Add(fruitData[0]);
+
+                    for (int u = 0; u < fruitData.Length; u++)
+
+                    {
+                        /* Console.WriteLine(rawData[j]);*///writes all csv file in line
+
+                    }
+
+                }
+                
+            
+         
+              
 
             }
-            
 
 
-        }
+            //lettersnubm = with some changing value lenght
 
-
-        
-
-        string animalN  = animalNames[rnd];
-        int lettersNmb = animalN.Length;
-
+            string animalN = animalNames[rnd];
+            int lettersNmb = animalN.Length;
 
 
         char[] guessarray = new char[lettersNmb];
@@ -235,7 +275,7 @@ class SecondTry
 
         }
     }
-
+}
 
 
     static string ToChar(string? v)
@@ -243,4 +283,4 @@ class SecondTry
         throw new NotImplementedException();
     }
 }
-   
+  
