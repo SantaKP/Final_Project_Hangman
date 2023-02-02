@@ -7,45 +7,49 @@ using System.Threading.Tasks;
 
 namespace Hangman_I
 {
-  class UserInput
+    class UserInput
     {
-        public static string UserChoise() 
-        { 
-            //Console.WriteLine("Guess a word. Do you want to guess an ANIMAL(a) or FRUIT(f) or VEGETABLE(v) ?");
-           
+        public static string UserChoise()
+        {
 
-            
-            
-            string choiceInp = Console.ReadLine();
-            bool wordValidation = choiceInp.All(Char.IsLetter);
+                string choiceInp = Console.ReadLine();
+                choiceInp = choiceInp.ToUpper();
 
-          
-            while (wordValidation == false)
+                bool wordValidation = choiceInp.All(Char.IsLetter);
 
-           {
-                Console.WriteLine("Please enter only letters:");
+
+
+            do
+            {
+
+
+
+                Console.WriteLine("Input not valid! Please check if you entered one letter(ANIMAL(A), FRUIT(F) or VEGETABLE(V))!");
                 Console.WriteLine("Please try again:");
 
-                choiceInp = Console.ReadLine();
-                
-            }
 
+            } while (wordValidation == false || choiceInp.Length == 2 || choiceInp.Length == 0);
+             
             
-            return choiceInp;
-
+             return choiceInp;
             
-
-
-
-
-
+            
+   
 
 
         }
-       
     }
+}
+
+
+            
+
+          
+        
+       
+    
 
 
 
     
-}
+

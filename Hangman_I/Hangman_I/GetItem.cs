@@ -27,15 +27,15 @@ namespace Hangman_I
 
             List<Item> listOfItems = new List<Item>(); // Creates the list of objects, of the class Item.
 
-            if (choice.Contains("f"))
+            if (choice.Contains("F"))
             {
                 fileName = "Fruits.csv";
             }
-            else if (choice.Contains("v"))
+            else if (choice.Contains("V"))
             {
                 fileName = "Vegetables.csv";
             }
-            else if (choice.Contains("a"))
+            else if (choice.Contains("A"))
             {
                 fileName = "Animals.csv";
             }
@@ -70,14 +70,5 @@ namespace Hangman_I
 
     }
 
-    //class OneWord
-    //{
-    //    public static string GetOneWord() {
-
-            
-
-
-    //        return GetOneWord(); 
-    //    }
-    //}
+    
 }

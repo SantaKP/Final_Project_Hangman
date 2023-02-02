@@ -13,9 +13,9 @@ namespace Hangman_I
 
         {
 
-            string mysteryName = "labas";
-            string mysteryHabit = "Lietuva";
-            string mysteryHint = "is beautiful";
+            string mysteryName;
+            string mysteryHabit;
+            string mysteryHint;
 
             Item Mystery = GetItem.GetOneItem();
             mysteryName = Mystery.name;
