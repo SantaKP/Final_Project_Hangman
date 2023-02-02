@@ -19,19 +19,19 @@ namespace Hangman_I
 
 
 
-            do
+            if (wordValidation == false || choiceInp.Length == 2 || choiceInp.Length == 0)
             {
 
-
-
                 Console.WriteLine("Input not valid! Please check if you entered one letter(ANIMAL(A), FRUIT(F) or VEGETABLE(V))!");
-                Console.WriteLine("Please try again:");
+                Console.WriteLine("Please try again:" );
+                choiceInp = Console.ReadLine();
 
+            }
+              
+                
 
-            } while (wordValidation == false || choiceInp.Length == 2 || choiceInp.Length == 0);
-             
+            return choiceInp;
             
-             return choiceInp;
             
             
    
