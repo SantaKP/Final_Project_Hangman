@@ -1,0 +1,11 @@
+Animal	Habitat	Hint
+elephant 	Africa	big ears
+Cow 	home	has horts and hooven
+Wolf	forest	eats redhood
+tiger	Asia	is very big and dangerous cat
+monkey	Africa	climbs in trees
+fish	Ocean	has flosses
+rat	fields	eats grain
+hen	home	lays eggs
+dog	home	barks
+hamster	home	has huge cheeks
