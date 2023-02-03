@@ -116,7 +116,7 @@ namespace Hangman
                 {
                     Console.Write("\n\n");
 
-                    Console.WriteLine("YOU LOST");
+                    Console.WriteLine("YOU LOST!!!");
                     Console.Write("\n");
                     Console.WriteLine("¯\\_(^_^)_/¯");
                     Console.Write("\n\n");
