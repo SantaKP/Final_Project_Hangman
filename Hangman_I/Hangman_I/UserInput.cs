@@ -19,22 +19,14 @@ namespace Hangman_I
             string choiceInp = Console.ReadLine();
             choiceInp = choiceInp.ToUpper();
             //bool wordValidation = choiceInp.All(Char.IsLetter);
-            for (; ; ) { 
-            if (choiceInp == A)
+            for (;;) { 
+            if ((choiceInp == A)||(choiceInp == F)||(choiceInp == V))
             {
                 return choiceInp;
             }
 
-            if (choiceInp == F)
-            {
-                return choiceInp;
-            }
-
-            if (choiceInp == V)
-            {
-                return choiceInp;
-            }
-            else if (choiceInp != A)
+       
+                else if ((choiceInp != A) || (choiceInp != F) || (choiceInp != V))
                 {
 
                     Console.WriteLine("Input not valid! Please check if you entered one letter(ANIMAL(A), FRUIT(F) or VEGETABLE(V))!");
@@ -45,34 +37,13 @@ namespace Hangman_I
                     choiceInp = choiceInp.ToUpper();
 
                 }
-               else if(choiceInp != F)
-                 {
-                Console.WriteLine("Input not valid! Please check if you entered one letter(ANIMAL(A), FRUIT(F) or VEGETABLE(V))!");
-
-                Console.WriteLine("Please try again:");
-
-                choiceInp = Console.ReadLine();
-                choiceInp = choiceInp.ToUpper();
-            }
-            else if(choiceInp != V)
-            {
-                Console.WriteLine("Input not valid! Please check if you entered one letter(ANIMAL(A), FRUIT(F) or VEGETABLE(V))!");
-
-                Console.WriteLine("Please try again:");
-
-                choiceInp = Console.ReadLine();
-                choiceInp = choiceInp.ToUpper();
+               
 
             }
-
-           }
 
             return choiceInp;
 
 
-
-
- 
 
         }
     }

@@ -28,16 +28,23 @@ namespace Hangman_I
             char[] guessarray = new char[lettersNmb];
 
             Console.WriteLine("Mystery word origins or habitat:  " + mysteryHabit);
+        Console.Write("Word has " + " " + lettersNmb + " " + "letters" + " ");
+            for (int k = 0; k < lettersNmb; k++)
+               
+            Console.Write("_ ");
+          Console.WriteLine("\n");
             Console.WriteLine("Please enter your guess: ");
-
+         
             for (int p = 0; p < lettersNmb; p++)
+                
                 guessarray[p] = '-';
+           
             int mistakes = 0;
             while (mistakes < 10)                          //The player can make only 6 mistakes
             {
                 string playerGuessStr = Console.ReadLine();
                 string playerGuessStrL = playerGuessStr.ToLower(); //the players guess I force to lower case, because
-                                                                   //all the checking is being done in only for lower letters
+                                                               //all the checking is being done in only for lower letters
 
                 char playerGuess = char.Parse(playerGuessStrL);    // I convert string to char, because I want to have the array of chars
                 int positv = 0;
@@ -52,7 +59,7 @@ namespace Hangman_I
                 }
                 if (positv == 0)
                 {
-                    Console.WriteLine(positv);
+                    //Console.WriteLine(positv);
                     mistakes = mistakes + 1;
                     Console.WriteLine(" Your made " + mistakes + " mistakes");
                     Drawing.Gallows(mistakes);
