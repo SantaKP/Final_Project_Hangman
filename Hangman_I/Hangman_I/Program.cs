@@ -15,17 +15,7 @@ namespace Hangman4
 
             Guessing.WordGuess(args);
 
-
-
-
-
-
-
-
         }
-
-
-
 
     }
 }

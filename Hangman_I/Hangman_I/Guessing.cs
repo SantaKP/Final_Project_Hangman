@@ -29,10 +29,18 @@ namespace Hangman_I
 
             Console.WriteLine("Mystery word origins or habitat:  " + mysteryHabit);
         Console.Write("Word has " + " " + lettersNmb + " " + "letters" + " ");
-            for (int k = 0; k < lettersNmb; k++)
-               
-            Console.Write("_ ");
-          Console.WriteLine("\n");
+            for (int n = 0; n < lettersNmb; n++)
+            {
+                guessarray[n] = '-';
+                Console.Write(guessarray[n]);
+            }
+            Console.WriteLine(); // Writes an empty line after the dashes which represent the letters
+
+            //  for (int k = 0; k < lettersNmb; k++)
+            //  Console.Write("_ ");
+            //Console.WriteLine("\n");
+
+
             Console.WriteLine("Please enter your guess: ");
          
             for (int p = 0; p < lettersNmb; p++)
@@ -44,9 +52,10 @@ namespace Hangman_I
             {
                 string playerGuessStr = Console.ReadLine();
                 string playerGuessStrL = playerGuessStr.ToLower(); //the players guess I force to lower case, because
-                                                               //all the checking is being done in only for lower letters
+                                                              //all the checking is being done in only for lower letters
 
-                char playerGuess = char.Parse(playerGuessStrL);    // I convert string to char, because I want to have the array of chars
+                char playerGuess = char.Parse(playerGuessStrL);// I convert string to char, because I want to have the array of chars
+     
                 int positv = 0;
                 for (int j = 0; j < lettersNmb; j++)
                 {
@@ -59,7 +68,7 @@ namespace Hangman_I
                 }
                 if (positv == 0)
                 {
-                    //Console.WriteLine(positv);
+                   
                     mistakes = mistakes + 1;
                     Console.WriteLine(" Your made " + mistakes + " mistakes");
                     Drawing.Gallows(mistakes);
@@ -74,7 +83,14 @@ namespace Hangman_I
                     Console.WriteLine("There is still missing letters");
                     if (mistakes == 3)
                     {
-                        Console.WriteLine("Hint for mystery word: " + mysteryHint);
+
+                        
+                        Console.Write("\n\n");
+                        
+                        Console.WriteLine("!!!( O _ O )!!!");
+
+                        Console.WriteLine("HINT for mystery word: " + mysteryHint);
+                        Console.Write("\n\n");
                     }
                 }
                 else
@@ -87,12 +103,14 @@ namespace Hangman_I
 
                 if (mistakes == 10)
                 {
+                    Console.Write("\n\n");
+
                     Console.WriteLine("YOU LOST");
+                    Console.Write("\n");
+                    Console.WriteLine("¯\\_(^_^)_/¯");
+                    Console.Write("\n\n");
                     Console.WriteLine("The secret word was: " + mysteryName);
                 }
-
-
-
 
             }
         }

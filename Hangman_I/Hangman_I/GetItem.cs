@@ -15,16 +15,10 @@ namespace Hangman_I
                                         // and the method returns one random object.
         {
 
-            //Console.WriteLine("Guess a word. Do you want to guess an ANIMAL(a) or FRUIT(f) or VEGETABLE(v) ?");
-            //string choice = Console.ReadLine();
-
-
             string choice = UserInput.UserChoise();
             string fileName = "";                      //Create an empty file where afterwards the name of chosen group would be written 
 
-            int rnd = new Random().Next(0, 5);
-            //Console.WriteLine(rnd);
-
+            
             List<Item> listOfItems = new List<Item>(); // Creates the list of objects, of the class Item.
 
             if (choice.Contains("F"))
@@ -40,18 +34,7 @@ namespace Hangman_I
                 fileName = "Animals.txt";
             }
 
-            else { 
-               
-            Console.WriteLine("There is not such group.");
-            Console.WriteLine("Please try again:" );
-                 UserInput.UserChoise();
-            }
-            //
-
-
-            // Read the file and display it line by line.
-
-            System.IO.StreamReader file = new System.IO.StreamReader(fileName);
+            System.IO.StreamReader file = new System.IO.StreamReader(fileName);  // Read the file and display it line by line.
 
 
             string line;
@@ -64,11 +47,13 @@ namespace Hangman_I
 
             }
 
-            file.Close();
+            file.Close();        
 
-            //foreach (var item in listOfItems)
-            //    Console.WriteLine(item);
+            int rnd = new Random().Next(0, listOfItems.Count);
+            //Console.WriteLine(rnd);
 
+
+            
             return listOfItems[rnd];
         }
 

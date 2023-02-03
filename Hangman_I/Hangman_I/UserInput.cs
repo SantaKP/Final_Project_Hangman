@@ -18,7 +18,6 @@ namespace Hangman_I
   
             string choiceInp = Console.ReadLine();
             choiceInp = choiceInp.ToUpper();
-            //bool wordValidation = choiceInp.All(Char.IsLetter);
             for (;;) { 
             if ((choiceInp == A)||(choiceInp == F)||(choiceInp == V))
             {
