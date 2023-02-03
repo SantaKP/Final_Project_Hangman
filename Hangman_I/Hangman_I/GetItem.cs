@@ -29,23 +29,28 @@ namespace Hangman_I
 
             if (choice.Contains("F"))
             {
-                fileName = "Fruits.csv";
+                fileName = "Fruits.txt";
             }
             else if (choice.Contains("V"))
             {
-                fileName = "Vegetables.csv";
+                fileName = "Vegetables.txt";
             }
             else if (choice.Contains("A"))
             {
-                fileName = "Animals.csv";
+                fileName = "Animals.txt";
             }
 
-            else
-                Console.WriteLine("There is not such group.");
+            else { 
+               
+            Console.WriteLine("There is not such group.");
+            Console.WriteLine("Please try again:" );
+                 UserInput.UserChoise();
+            }
+            //
 
 
             // Read the file and display it line by line.
-            
+
             System.IO.StreamReader file = new System.IO.StreamReader(fileName);
 
 

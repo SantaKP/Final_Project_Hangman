@@ -27,7 +27,7 @@ namespace Hangman_I
 
             char[] guessarray = new char[lettersNmb];
 
-            Console.WriteLine("Mystery word comes from " + mysteryHabit);
+            Console.WriteLine("Mystery word origins or habitat:  " + mysteryHabit);
             Console.WriteLine("Please enter your guess: ");
 
             for (int p = 0; p < lettersNmb; p++)
@@ -67,7 +67,7 @@ namespace Hangman_I
                     Console.WriteLine("There is still missing letters");
                     if (mistakes == 3)
                     {
-                        Console.WriteLine("The secret word " + mysteryHint);
+                        Console.WriteLine("Hint for mystery word: " + mysteryHint);
                     }
                 }
                 else
