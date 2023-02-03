@@ -55,8 +55,10 @@ namespace Hangman_I
                                                               //all the checking is being done in only for lower letters
 
                 char playerGuess = char.Parse(playerGuessStrL);// I convert string to char, because I want to have the array of chars
-     
-                int positv = 0;
+              
+
+
+                    int positv = 0;
                 for (int j = 0; j < lettersNmb; j++)
                 {
                     if (playerGuess == mysteryName[j])
